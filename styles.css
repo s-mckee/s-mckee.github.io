@@ -1,0 +1,122 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #311465;
+    color: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    border-bottom: 2px solid #fafafa;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    color: #fafafa;
+    margin: 0 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+nav a:visited {
+    color: #ff2400;
+}
+
+main {
+    margin: 1rem;
+    font-size: 1.15rem;
+}
+
+main h2 {
+    margin-top: 3rem;
+}
+
+main a {
+    color: #fafafa;
+}
+
+main a:hover {
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+main a:visited {
+    color: #ff2400;
+}
+
+figure {
+    text-align: center;
+}
+
+footer {
+    border-top: 2px solid #fafafa;
+    margin: auto 1rem 1rem;
+}
+
+#self-image {
+    width: 200px;
+    height: auto;
+    border: 4px solid #fafafa;
+    border-radius: 50%;
+}
+
+#self-image:hover {
+    cursor: pointer;
+}
+
+#github-link {
+    width: 150px;
+    height: auto;
+}
+
+#github-link:hover {
+    border: 3px solid #ff2400;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        display: block;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav ul {
+        width: 75%;
+        justify-content: center;
+    }
+
+    #social-media h2 {
+        text-align: center;
+    }
+
+    #self-image {
+        width: 150px;
+        height: auto;
+    }
+
+    #github-link {
+        width: 100px;
+        height: auto;
+    }
+}
